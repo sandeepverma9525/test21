@@ -50,6 +50,7 @@ const axiosAuth = axios.create({
       }
     };
     fetchMissions();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // ---------------- Fetch Activities ----------------
@@ -63,6 +64,7 @@ const axiosAuth = axios.create({
       }
     };
     fetchActivities();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // ---------------- Missions Handlers ----------------
