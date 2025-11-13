@@ -1,0 +1,141 @@
+/* -------------------------
+   PAGE CONTAINER
+-------------------------- */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: linear-gradient(135deg, #6366f1, #9333ea);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* -------------------------
+   CARD / FORM
+-------------------------- */
+.auth-form {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.auth-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1e3a8a;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* -------------------------
+   INPUT GROUP
+-------------------------- */
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #f9fafb;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  margin-bottom: 16px;
+  transition: all 0.25s ease;
+}
+
+.input-group:focus-within {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.input-icon {
+  color: #6366f1;
+  font-size: 1.1rem;
+  margin-right: 10px;
+}
+
+.input-group input,
+.input-group select {
+  border: none;
+  outline: none;
+  flex: 1;
+  background: transparent;
+  font-size: 15px;
+  color: #334155;
+}
+
+/* Dropdown Styling */
+.input-group select {
+  appearance: none;
+  cursor: pointer;
+}
+
+/* -------------------------
+   BUTTON
+-------------------------- */
+.auth-btn {
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.auth-btn:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(30, 58, 138, 0.3);
+}
+
+/* -------------------------
+   LINKS
+-------------------------- */
+.auth-link {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.auth-link a {
+  color: #6366f1;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+  color: #4f46e5;
+}
+
+/* -------------------------
+   ANIMATION
+-------------------------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* -------------------------
+   RESPONSIVE
+-------------------------- */
+@media (max-width: 500px) {
+  .auth-form {
+    padding: 25px;
+  }
+}

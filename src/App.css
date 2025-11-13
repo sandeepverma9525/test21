@@ -1,0 +1,28 @@
+.layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.sidebar {
+  width: 240px; /* your sidebar width */
+  background: #1e293b; /* example */
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.topbar {
+  height: 60px; /* same height you used above */
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.main-content > .eventbookings-page {
+  flex: 1;
+  overflow-y: auto; /* scrolling only inside page area */
+}
