@@ -104,7 +104,7 @@ const Youtube = () => {
 
   useEffect(() => {
     fetchVideos();
-  }, [fetchVideos]);
+  }, []);
 
   const handleInputChange = (e) => {
     setVideoLink(e.target.value);

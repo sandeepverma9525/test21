@@ -2,9 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate, Outlet } from "react-router-dom";
 
 import DashboardLayout from "../Layout/DashboardLayout";
-import Dashboard from "../Dashboard/Dashboard";
+// import Dashboard from "../Dashboard/Dashboard";
 import TempleBookings from "../Dashboard/TempleBookings";
-import EventBookings from "../Dashboard/EventBookings";
+// import EventBookings from "../Dashboard/EventBookings";
 import SevaBookings from "../Dashboard/SevaBookings";
 import Banner from "../AdminDashboard/Banner";
 import Events from "../AdminDashboard/Events";
@@ -17,9 +17,9 @@ import AddSevas from "../AdminDashboard/AddSevas";
 import AboutUs from "../AdminDashboard/AboutUs";
 import ChangePassword from "../Login/ChangePassword";
 import Login from "../Login/Login"; 
-import SignUp from "../Login/SignUp";
-import CardManagement from "../AdminDashboard/CardManagement";
-import Home_event from "../AdminDashboard/Home_event/Home_event";
+// import SignUp from "../Login/SignUp";
+// import CardManagement from "../AdminDashboard/CardManagement";
+// import Home_event from "../AdminDashboard/Home_event/Home_event";
 import HomeEvent from "../AdminDashboard/Home_event/HomeEvent";
 
 // ✅ Protect routes
@@ -45,9 +45,9 @@ const Routers = ({ isAuthenticated, setIsAuthenticated }) => {
       <Route path="/temple-bookings" element={<TempleBookings />} />
       {/* <Route path="/home_event" element={<Home_event/>} /> */}
       <Route path="homeevent" element={<HomeEvent/>} />
-      <Route path="/event-bookings" element={<EventBookings />} />
+      {/* <Route path="/event-bookings" element={<EventBookings />} /> */} 
       <Route path="/banner" element={<Banner />} />
-      <Route path="/card-manager" element={<CardManagement />} />
+      {/* <Route path="/card-manager" element={<CardManagement />} /> */}
       <Route path="/add-events" element={<Events />} />
       <Route path="/recurring-events" element={<RecurringEvents />} />
       <Route path="/gallery" element={<Gallery />} />

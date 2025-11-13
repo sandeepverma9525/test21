@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Events.css";
 
@@ -35,9 +35,11 @@ const Events = () => {
     setTimeout(() => setNotification(null), 3000);
   };
 
+  useEffect(() => {
+    fetchEvents();
+  }, []);
 
-
-  const fetchEvents = useCallback( async () => {
+  const fetchEvents = async () => {
     try {
       const res = await axiosAuth.get("/getAllEvents");
       if (res.data.success) {
@@ -66,11 +68,7 @@ const Events = () => {
       console.error("Error fetching events:", error);
       showNotification("Error fetching events", "error");
     }
-  }, [axiosAuth]);
-
-    useEffect(() => {
-    fetchEvents();
-  }, []);
+  };
 
   const getImageURL = (file) => (!file ? null : typeof file === "string" ? file : URL.createObjectURL(file));
 
